@@ -64,24 +64,18 @@ To summary, the idea of this negative sampling is that:
 
 ![image-20210607100214343](img/negative_sampling/image-20210607100214343.png)
 
-> $$u$$: user factors
+> u: user factors
 >
-> $$v$$: item factors
+> v: item factors
 >
-> $$j$$: positive sample item id
+> j: positive sample item id
 >
-> $$l$$: negative sample item id
+> l: negative sample item id
 
 **Optimizer**
 
 Considering the training speed and efficiency,  SGD are used for optimization.  **Different Learning rate schedule and momentum are tried and it turns out learning rate being `1e-5` and not applying momentum is the most efficient approach.**
-$$
-\begin{array}{l} 
-u_{i k} \leftarrow u_{i k}-\alpha\left(\frac{1}{1+\exp \left\{\boldsymbol{u}_{i}^{T} \boldsymbol{v}_{j}-\boldsymbol{u}_{i}^{T} \boldsymbol{v}_{l}\right\}}\left(v_{l k}-v_{j k}\right)+\lambda \cdot u_{i k}\right) \\
-v_{j k} \leftarrow v_{j k}-\alpha\left(\frac{1}{1+\exp \left\{\boldsymbol{u}_{i}^{T} \boldsymbol{v}_{j}-\boldsymbol{u}_{i}^{T} \boldsymbol{v}_{l}\right\}}\left(-u_{i k}\right)+\lambda \cdot v_{j k}\right) \\
-v_{l k} \leftarrow v_{l k}-\alpha\left(\frac{1}{1+\exp \left\{\boldsymbol{u}_{i}^{T} \boldsymbol{v}_{j}-\boldsymbol{u}_{i}^{T} \boldsymbol{v}_{l}\right\}}\left(u_{i k}\right)+\lambda \cdot v_{l k}\right)
-\end{array}
-$$
+
 
 #### Interpretation
 
