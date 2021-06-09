@@ -1,0 +1,12 @@
+{
+ "k": 128,
+ "lambda_reg": 0.003,
+ "learning_rate": 0.001,
+ "losses": "0.68419 0.12892 0.06344 0.04239 0.03243 0.02673 0.02308 0.02055 0.0187 0.0173 0.01621 0.01533 0.01461 0.01401 0.0135 0.01307",
+ "max_iter": 80,
+ "model_path": "/home/kevin/nut/MITB/recommendor/pj1/checkout/model",
+ "momentum": 0.9,
+ "name": "MBPR_T5_N80_k128",
+ "recommend_file_path": "/home/kevin/nut/MITB/recommendor/pj1/checkout/recommend",
+ "verbose": false
+}
