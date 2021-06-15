@@ -1,0 +1,44 @@
+name: python37
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - _openmp_mutex=4.5=1_gnu
+  - ca-certificates=2021.5.30=ha878542_0
+  - certifi=2021.5.30=py37h89c1867_0
+  - cornac=1.12.0=py37h219a48f_0
+  - ld_impl_linux-64=2.35.1=h7274673_9
+  - libblas=3.9.0=9_openblas
+  - libcblas=3.9.0=9_openblas
+  - libffi=3.3=he6710b0_2
+  - libgcc-ng=9.3.0=h5101ec6_17
+  - libgfortran-ng=9.3.0=hff62375_19
+  - libgfortran5=9.3.0=hff62375_19
+  - libgomp=9.3.0=h5101ec6_17
+  - liblapack=3.9.0=9_openblas
+  - libopenblas=0.3.15=pthreads_h8fe5266_1
+  - libstdcxx-ng=9.3.0=hd4cf53a_17
+  - ncurses=6.2=he6710b0_1
+  - numpy=1.20.3=py37h038b26d_1
+  - openssl=1.1.1k=h7f98852_0
+  - pip=21.1.2=py37h06a4308_0
+  - python=3.7.10=h12debd9_4
+  - python_abi=3.7=1_cp37m
+  - readline=8.1=h27cfd23_0
+  - scipy=1.6.3=py37h29e03ee_0
+  - setuptools=52.0.0=py37h06a4308_0
+  - sqlite=3.35.4=hdfb4753_0
+  - tk=8.6.10=hbc83047_0
+  - tqdm=4.61.1=pyhd8ed1ab_0
+  - wheel=0.36.2=pyhd3eb1b0_0
+  - xz=5.2.5=h7b6447c_0
+  - zlib=1.2.11=h7b6447c_3
+  - pip:
+    - pandas==1.2.4
+    - python-dateutil==2.8.1
+    - pytz==2021.1
+    - six==1.16.0
+    - torch==1.8.1
+    - typing-extensions==3.10.0.0
+prefix: /home/kevin/miniconda3/envs/python37

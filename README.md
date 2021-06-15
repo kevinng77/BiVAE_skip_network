@@ -10,8 +10,7 @@
 ├── config
 │   └──  config.py
 ├── data  // data folder
-│   ├── cs608_ip_train_v3.csv // sample raw data
-│   └── Modify_train_4_25.csv  //sample training data
+│   └──  cs608_ip_train_v3.csv // sample raw data
 ├── data_process.sh
 ├── gen_data.py
 ├── img  // readme file img
@@ -60,6 +59,8 @@ The negative sampling performs bad might owning to the following reason:
 
 #### Training BiVAE and generate top 50 recommend
 
+The result will be stored at `checkout/recommend`
+
 ```shell
 python train_bivae.py --epochs 850 --work_path "." --true_threshold 0 --lr 0.001 --k 32 --encoder_structure 64 --decoder_structure 64 --batch_size 128 --seed 7
 ```
@@ -84,7 +85,7 @@ learning_rate = 1e-3
 | 64                | [64]                              | 32   | 0.038,  0.0945        | **0.0392, 0.0973**              |
 | 40                | [40]                              | 20   | 0.0358, **0.0955**    | **0.0369**, 0.0926              |
 
-*(table: NCDG, recall scores.)*
+*(table: NDCG, recall scores.)*
 
 #### Processing Negative Sample
 
